@@ -1,0 +1,547 @@
+{
+  "policies": [
+    {
+      "id": "americas-hiring",
+      "zone": "Americas",
+      "topic": "Hiring & Compensation",
+      "effectiveRegions": ["United States", "Canada", "Mexico"],
+      "currency": "USD",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs recruitment approval, offer construction, and compensation banding for all new hires in the Americas region. It sets standard compensation ranges by category, referral bonus amounts, and the exception process for offers outside standard bands. All figures are in $ unless otherwise noted."
+        },
+        {
+          "id": "compensation-associate",
+          "title": "Compensation Band - Associate",
+          "minRole": "Associate",
+          "content": "Associates (e.g. Sales Representatives, Customer Service Reps): Compensation band $55,000 - $75,000 base annually. Offer approval: Hiring Manager + Department Head."
+        },
+        {
+          "id": "compensation-senior",
+          "title": "Compensation Band - Senior",
+          "minRole": "Senior",
+          "content": "Senior (e.g. Regional Managers, Account Executives): Compensation band $85,000 - $130,000 base annually. Offer approval: Hiring Manager + VP sign-off required."
+        },
+        {
+          "id": "compensation-executive",
+          "title": "Compensation Band - Executive",
+          "minRole": "Executive",
+          "content": "Executive (CEO, CFO, and direct reports): Compensation band $180,000 - $350,000 base annually, plus bonus and equity per grade. Offer approval: CEO and Compensation Committee sign-off required."
+        },
+        {
+          "id": "referral-program",
+          "title": "Referral Program",
+          "minRole": "Associate",
+          "content": "Employees who refer a successfully hired candidate receive a referral bonus, paid after the new hire completes 90 days. Standard referral bonus: $1,000 per successful hire. Referral bonus doubles for hard-to-fill technical or leadership roles open 60+ days, subject to VP approval."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Offers outside the standard band for a category require written exception approval before extension to the candidate. Offering above the top of a category band requires CFO approval, with justification documented in the Compensation Exceptions Register. Hiring a candidate into an Associate title at Senior-level compensation requires VP People Ops approval. Sign-on bonuses above one month of base salary require CFO approval."
+        },
+        {
+          "id": "background-checks",
+          "title": "Background Checks & Onboarding",
+          "minRole": "Associate",
+          "content": "All Associate and Senior offers are contingent on standard background and reference checks. Executive offers require an extended background check including prior employment and reference verification by an external agency. Offer letters are valid for 10 business days unless otherwise extended in writing."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Holly Flax, People Ops, holly.flax@dundermifflin-corp.com, +1 (570) 555-0148. Exception approvals: Jan Levinson, VP Sales, jan.levinson@dundermifflin-corp.com, +1 (570) 555-0172. Booking & process issues: Kevin Malone, Accounting, kevin.malone@dundermifflin-corp.com, +1 (570) 555-0193. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    },
+    {
+      "id": "americas-travel",
+      "zone": "Americas",
+      "topic": "Travel",
+      "effectiveRegions": ["United States", "Canada", "Mexico"],
+      "currency": "USD",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs all business travel booked by DunderMifflin Enterprises employees based in the Americas region. It sets budget ceilings, cabin class eligibility, and approval requirements by employee category, and defines the exception process for travel outside standard limits. All figures are in $ unless otherwise noted."
+        },
+        {
+          "id": "entitlements-associate",
+          "title": "Travel Entitlements - Associate",
+          "minRole": "Associate",
+          "content": "Associates: Domestic flights Economy class only. International flights Economy class only. Hotel budget up to $180/night (major metro), $130/night (other). Per diem $65/day domestic, $85/day international. Ground transport standard rideshare or rental (economy tier). Annual travel budget cap: $8,000."
+        },
+        {
+          "id": "entitlements-senior",
+          "title": "Travel Entitlements - Senior",
+          "minRole": "Senior",
+          "content": "Senior: Domestic flights Economy class, Economy Plus permitted for flights over 4 hours. International flights Premium Economy. Hotel budget up to $250/night (major metro), $180/night (other). Per diem $85/day domestic, $110/day international. Ground transport standard rideshare, rental (mid-tier permitted). Annual travel budget cap: $18,000."
+        },
+        {
+          "id": "entitlements-executive",
+          "title": "Travel Entitlements - Executive",
+          "minRole": "Executive",
+          "content": "Executive: Domestic flights Business class permitted on flights over 3 hours. International flights Business class. Hotel budget up to $400/night, no city restriction. Per diem $120/day domestic, $150/day international. Ground transport no restriction within reason. Annual travel budget cap: $45,000."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Any travel request exceeding a category's standard entitlement (e.g. an Associate requesting Business class, or a Senior employee exceeding the annual cap) requires a written exception approval from a Vice President or above prior to booking. Exceptions must state business justification and are logged in the Travel Exceptions Register for quarterly audit. Associate traveling on a flight duration exceeding 8 hours may request Economy Plus with VP approval. Medical or accessibility accommodation requests are approved regardless of category, requiring HR sign-off instead of VP. Client-mandated travel class requirements require VP approval, noting client name in justification."
+        },
+        {
+          "id": "booking-reimbursement",
+          "title": "Booking & Reimbursement",
+          "minRole": "Associate",
+          "content": "All travel must be booked through the approved corporate travel portal; personal booking with later reimbursement is discouraged and capped at Associate-tier rates regardless of employee category. Reimbursement claims must be submitted within 14 days of trip completion. Receipts required for any single expense over $25."
+        },
+        {
+          "id": "non-compliance",
+          "title": "Non-Compliance",
+          "minRole": "Associate",
+          "content": "Repeated bookings outside policy without an approved exception may result in the excess cost being charged back to the employee's department budget and a formal note in the quarterly expense review."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Holly Flax, People Ops, holly.flax@dundermifflin-corp.com, +1 (570) 555-0148. Exception approvals: Jan Levinson, VP Sales, jan.levinson@dundermifflin-corp.com, +1 (570) 555-0172. Booking & process issues: Kevin Malone, Accounting, kevin.malone@dundermifflin-corp.com, +1 (570) 555-0193. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    },
+    {
+      "id": "americas-parental-leave",
+      "zone": "Americas",
+      "topic": "Parental Leave",
+      "effectiveRegions": ["United States", "Canada", "Mexico"],
+      "currency": "USD",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs parental (maternity, paternity, and adoption) leave entitlements for DunderMifflin Enterprises employees in the Americas region. Entitlements are set per country to comply with local statutory minimums, with company enhancements applied on top where noted. This document covers the United States, Canada, and Mexico; entitlements do not transfer between countries if an employee relocates mid-leave."
+        },
+        {
+          "id": "entitlements-us",
+          "title": "Country Entitlement - United States",
+          "minRole": "Associate",
+          "content": "United States: 12 weeks job-protected leave (federal FMLA baseline). Company enhancement: 8 weeks paid at 100% of base salary, followed by 4 weeks unpaid job-protected leave."
+        },
+        {
+          "id": "entitlements-canada",
+          "title": "Country Entitlement - Canada",
+          "minRole": "Associate",
+          "content": "Canada: Up to 17 weeks maternity leave plus 63 weeks parental leave (government EI-backed). Company tops up government benefit to 80% of base salary for the first 12 weeks."
+        },
+        {
+          "id": "entitlements-mexico",
+          "title": "Country Entitlement - Mexico",
+          "minRole": "Associate",
+          "content": "Mexico: 12 weeks paid maternity leave per federal law (6 weeks pre-birth, 6 weeks post-birth). Company matches statutory pay in full; no additional top-up applied."
+        },
+        {
+          "id": "category-provisions-standard",
+          "title": "Category Provisions - Associate & Senior",
+          "minRole": "Associate",
+          "content": "Associates and Senior employees: standard entitlement as listed per country, full job protection on return."
+        },
+        {
+          "id": "category-provisions-executive",
+          "title": "Category Provisions - Executive",
+          "minRole": "Executive",
+          "content": "Executives: same duration as standard entitlement, with an optional staggered return-to-work arrangement (reduced schedule for first 4 weeks) available on request."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Extensions beyond standard entitlement (e.g. for medical complications, multiple births, or adoption-specific circumstances) require written approval from a Vice President and People Operations. Medical complication extensions are approved by HR upon medical documentation, no VP approval needed. Discretionary extension requests beyond medical need require VP + People Ops joint approval, logged in the Leave Exceptions Register."
+        },
+        {
+          "id": "pay-continuation",
+          "title": "Pay Continuation",
+          "minRole": "Associate",
+          "content": "Company top-up pay (where noted per country) is calculated on base salary only, excluding bonus and commission. Benefits (health coverage, retirement contributions) continue uninterrupted throughout the leave period."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Holly Flax, People Ops, holly.flax@dundermifflin-corp.com, +1 (570) 555-0148. Exception approvals: Jan Levinson, VP Sales, jan.levinson@dundermifflin-corp.com, +1 (570) 555-0172. Booking & process issues: Kevin Malone, Accounting, kevin.malone@dundermifflin-corp.com, +1 (570) 555-0193. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    },
+    {
+      "id": "apac-hiring",
+      "zone": "APAC",
+      "topic": "Hiring & Compensation",
+      "effectiveRegions": ["India", "Japan", "Singapore", "Australia"],
+      "currency": "USD",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs recruitment approval, offer construction, and compensation banding for all new hires in the APAC region. It sets standard compensation ranges by category, referral bonus amounts, and the exception process for offers outside standard bands. All figures are in $ unless otherwise noted."
+        },
+        {
+          "id": "compensation-associate",
+          "title": "Compensation Band - Associate",
+          "minRole": "Associate",
+          "content": "Associates (e.g. Sales Representatives, Customer Service Reps): Compensation band $18,000 - $28,000 base annually (local currency equivalents apply per country). Offer approval: Hiring Manager + Department Head."
+        },
+        {
+          "id": "compensation-senior",
+          "title": "Compensation Band - Senior",
+          "minRole": "Senior",
+          "content": "Senior (e.g. Regional Managers, Account Executives): Compensation band $35,000 - $55,000 base annually. Offer approval: Hiring Manager + VP sign-off required."
+        },
+        {
+          "id": "compensation-executive",
+          "title": "Compensation Band - Executive",
+          "minRole": "Executive",
+          "content": "Executive (CEO, CFO, and direct reports): Compensation band $90,000 - $180,000 base annually, plus bonus per grade. Offer approval: CEO and Compensation Committee sign-off required."
+        },
+        {
+          "id": "referral-program",
+          "title": "Referral Program",
+          "minRole": "Associate",
+          "content": "Employees who refer a successfully hired candidate receive a referral bonus, paid after the new hire completes 90 days. Standard referral bonus: $500 per successful hire. Referral bonus doubles for hard-to-fill technical or leadership roles open 60+ days, subject to VP approval."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Offers outside the standard band for a category require written exception approval before extension to the candidate. Offering above the top of a category band requires CFO approval, with justification documented in the Compensation Exceptions Register. Hiring a candidate into an Associate title at Senior-level compensation requires VP People Ops approval. Sign-on bonuses above one month of base salary require CFO approval."
+        },
+        {
+          "id": "background-checks",
+          "title": "Background Checks & Onboarding",
+          "minRole": "Associate",
+          "content": "All Associate and Senior offers are contingent on standard background and reference checks. Executive offers require an extended background check including prior employment and reference verification by an external agency. Offer letters are valid for 10 business days unless otherwise extended in writing."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Oscar Martinez, People Ops APAC, oscar.martinez@dundermifflin-corp.com, +65 6555 0134. Exception approvals: Angela Martin, VP APAC, angela.martin@dundermifflin-corp.com, +65 6555 0177. Booking & process issues: Phyllis Vance, Accounting APAC, phyllis.vance@dundermifflin-corp.com, +65 6555 0188. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    },
+    {
+      "id": "apac-travel",
+      "zone": "APAC",
+      "topic": "Travel",
+      "effectiveRegions": ["India", "Japan", "Singapore", "Australia"],
+      "currency": "USD",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs all business travel booked by DunderMifflin Enterprises employees based in the APAC region. It sets budget ceilings, cabin class eligibility, and approval requirements by employee category, and defines the exception process for travel outside standard limits. All figures are in $ unless otherwise noted."
+        },
+        {
+          "id": "entitlements-associate",
+          "title": "Travel Entitlements - Associate",
+          "minRole": "Associate",
+          "content": "Associates: Domestic flights Economy class only. International flights Economy class only. Hotel budget up to $150/night (major metro: Tokyo, Singapore), $90/night (other). Per diem $50/day domestic, $70/day international. Ground transport standard rideshare or rental (economy tier). Annual travel budget cap: $6,000."
+        },
+        {
+          "id": "entitlements-senior",
+          "title": "Travel Entitlements - Senior",
+          "minRole": "Senior",
+          "content": "Senior: Domestic flights Economy class, Economy Plus permitted for flights over 4 hours. International flights Premium Economy. Hotel budget up to $220/night (major metro), $140/night (other). Per diem $70/day domestic, $95/day international. Ground transport standard rideshare, rental (mid-tier permitted). Annual travel budget cap: $15,000."
+        },
+        {
+          "id": "entitlements-executive",
+          "title": "Travel Entitlements - Executive",
+          "minRole": "Executive",
+          "content": "Executive: Domestic flights Business class permitted on flights over 3 hours. International flights Business class. Hotel budget up to $350/night, no city restriction. Per diem $100/day domestic, $130/day international. Ground transport no restriction within reason. Annual travel budget cap: $38,000."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Any travel request exceeding a category's standard entitlement (e.g. an Associate requesting Business class, or a Senior employee exceeding the annual cap) requires a written exception approval from a Vice President or above prior to booking. Exceptions must state business justification and are logged in the Travel Exceptions Register for quarterly audit. Associate traveling on a flight duration exceeding 8 hours may request Economy Plus with VP approval. Medical or accessibility accommodation requests are approved regardless of category, requiring HR sign-off instead of VP. Client-mandated travel class requirements require VP approval, noting client name in justification."
+        },
+        {
+          "id": "booking-reimbursement",
+          "title": "Booking & Reimbursement",
+          "minRole": "Associate",
+          "content": "All travel must be booked through the approved corporate travel portal; personal booking with later reimbursement is discouraged and capped at Associate-tier rates regardless of employee category. Reimbursement claims must be submitted within 14 days of trip completion. Receipts required for any single expense over $25."
+        },
+        {
+          "id": "non-compliance",
+          "title": "Non-Compliance",
+          "minRole": "Associate",
+          "content": "Repeated bookings outside policy without an approved exception may result in the excess cost being charged back to the employee's department budget and a formal note in the quarterly expense review."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Oscar Martinez, People Ops APAC, oscar.martinez@dundermifflin-corp.com, +65 6555 0134. Exception approvals: Angela Martin, VP APAC, angela.martin@dundermifflin-corp.com, +65 6555 0177. Booking & process issues: Phyllis Vance, Accounting APAC, phyllis.vance@dundermifflin-corp.com, +65 6555 0188. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    },
+    {
+      "id": "apac-parental-leave",
+      "zone": "APAC",
+      "topic": "Parental Leave",
+      "effectiveRegions": ["India", "Japan", "Singapore", "Australia"],
+      "currency": "USD",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs parental (maternity, paternity, and adoption) leave entitlements for DunderMifflin Enterprises employees in the APAC region. Entitlements are set per country to comply with local statutory minimums, with company enhancements applied on top where noted. This document covers India, Japan, Singapore, and Australia; entitlements do not transfer between countries if an employee relocates mid-leave."
+        },
+        {
+          "id": "entitlements-india",
+          "title": "Country Entitlement - India",
+          "minRole": "Associate",
+          "content": "India: 26 weeks paid maternity leave per the Maternity Benefit Act. Paternity leave: 2 weeks, company policy (no statutory minimum)."
+        },
+        {
+          "id": "entitlements-japan",
+          "title": "Country Entitlement - Japan",
+          "minRole": "Associate",
+          "content": "Japan: 14 weeks maternity leave, plus childcare leave available up to 1 year (partial government pay). Company tops up the first 8 weeks to 100% of base salary."
+        },
+        {
+          "id": "entitlements-singapore",
+          "title": "Country Entitlement - Singapore",
+          "minRole": "Associate",
+          "content": "Singapore: 16 weeks paid maternity leave (government-funded portion plus company top-up to full pay). Paternity leave: 2 weeks, government-funded."
+        },
+        {
+          "id": "entitlements-australia",
+          "title": "Country Entitlement - Australia",
+          "minRole": "Associate",
+          "content": "Australia: 18 weeks paid parental leave under the government Paid Parental Leave scheme. Company supplement: additional 6 weeks at 100% of base salary."
+        },
+        {
+          "id": "category-provisions-standard",
+          "title": "Category Provisions - Associate & Senior",
+          "minRole": "Associate",
+          "content": "Associates and Senior employees: standard entitlement as listed per country, full job protection on return."
+        },
+        {
+          "id": "category-provisions-executive",
+          "title": "Category Provisions - Executive",
+          "minRole": "Executive",
+          "content": "Executives: same duration as standard entitlement, with an optional staggered return-to-work arrangement (reduced schedule for first 4 weeks) available on request."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Extensions beyond standard entitlement (e.g. for medical complications, multiple births, or adoption-specific circumstances) require written approval from a Vice President and People Operations. Medical complication extensions are approved by HR upon medical documentation, no VP approval needed. Discretionary extension requests beyond medical need require VP + People Ops joint approval, logged in the Leave Exceptions Register."
+        },
+        {
+          "id": "pay-continuation",
+          "title": "Pay Continuation",
+          "minRole": "Associate",
+          "content": "Company top-up pay (where noted per country) is calculated on base salary only, excluding bonus and commission. Benefits (health coverage, retirement contributions) continue uninterrupted throughout the leave period."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Oscar Martinez, People Ops APAC, oscar.martinez@dundermifflin-corp.com, +65 6555 0134. Exception approvals: Angela Martin, VP APAC, angela.martin@dundermifflin-corp.com, +65 6555 0177. Booking & process issues: Phyllis Vance, Accounting APAC, phyllis.vance@dundermifflin-corp.com, +65 6555 0188. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    },
+    {
+      "id": "europe-hiring",
+      "zone": "Europe",
+      "topic": "Hiring & Compensation",
+      "effectiveRegions": ["United Kingdom", "Germany", "France", "Netherlands"],
+      "currency": "EUR",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs recruitment approval, offer construction, and compensation banding for all new hires in the Europe region. It sets standard compensation ranges by category, referral bonus amounts, and the exception process for offers outside standard bands. All figures are in EUR unless otherwise noted."
+        },
+        {
+          "id": "compensation-associate",
+          "title": "Compensation Band - Associate",
+          "minRole": "Associate",
+          "content": "Associates (e.g. Sales Representatives, Customer Service Reps): Compensation band EUR 35,000 - EUR 48,000 base annually. Offer approval: Hiring Manager + Department Head."
+        },
+        {
+          "id": "compensation-senior",
+          "title": "Compensation Band - Senior",
+          "minRole": "Senior",
+          "content": "Senior (e.g. Regional Managers, Account Executives): Compensation band EUR 60,000 - EUR 90,000 base annually. Offer approval: Hiring Manager + VP sign-off required."
+        },
+        {
+          "id": "compensation-executive",
+          "title": "Compensation Band - Executive",
+          "minRole": "Executive",
+          "content": "Executive (CEO, CFO, and direct reports): Compensation band EUR 150,000 - EUR 280,000 base annually, plus bonus and equity per grade. Offer approval: CEO and Compensation Committee sign-off required."
+        },
+        {
+          "id": "referral-program",
+          "title": "Referral Program",
+          "minRole": "Associate",
+          "content": "Employees who refer a successfully hired candidate receive a referral bonus, paid after the new hire completes 90 days. Standard referral bonus: EUR 800 per successful hire. Referral bonus doubles for hard-to-fill technical or leadership roles open 60+ days, subject to VP approval."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Offers outside the standard band for a category require written exception approval before extension to the candidate. Offering above the top of a category band requires CFO approval, with justification documented in the Compensation Exceptions Register. Hiring a candidate into an Associate title at Senior-level compensation requires VP People Ops approval. Sign-on bonuses above one month of base salary require CFO approval."
+        },
+        {
+          "id": "background-checks",
+          "title": "Background Checks & Onboarding",
+          "minRole": "Associate",
+          "content": "All Associate and Senior offers are contingent on standard background and reference checks. Executive offers require an extended background check including prior employment and reference verification by an external agency. Offer letters are valid for 10 business days unless otherwise extended in writing."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Pam Beesly, People Ops Europe, pam.beesly@dundermifflin-corp.com, +44 20 7946 0148. Exception approvals: Andy Bernard, VP Europe, andy.bernard@dundermifflin-corp.com, +44 20 7946 0172. Booking & process issues: Meredith Palmer, Accounting Europe, meredith.palmer@dundermifflin-corp.com, +44 20 7946 0193. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    },
+    {
+      "id": "europe-travel",
+      "zone": "Europe",
+      "topic": "Travel",
+      "effectiveRegions": ["United Kingdom", "Germany", "France", "Netherlands"],
+      "currency": "EUR",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs all business travel booked by DunderMifflin Enterprises employees based in the Europe region. It sets budget ceilings, cabin class eligibility, and approval requirements by employee category, and defines the exception process for travel outside standard limits. All figures are in EUR unless otherwise noted."
+        },
+        {
+          "id": "entitlements-associate",
+          "title": "Travel Entitlements - Associate",
+          "minRole": "Associate",
+          "content": "Associates: Domestic flights Economy class only. International flights Economy class only. Hotel budget up to EUR 160/night (major metro), EUR 110/night (other). Per diem EUR 55/day domestic, EUR 75/day international. Ground transport standard rideshare or rental (economy tier). Annual travel budget cap: EUR 7,000."
+        },
+        {
+          "id": "entitlements-senior",
+          "title": "Travel Entitlements - Senior",
+          "minRole": "Senior",
+          "content": "Senior: Domestic flights Economy class, Economy Plus permitted for flights over 4 hours. International flights Premium Economy. Hotel budget up to EUR 230/night (major metro), EUR 160/night (other). Per diem EUR 75/day domestic, EUR 100/day international. Ground transport standard rideshare, rental (mid-tier permitted). Annual travel budget cap: EUR 16,000."
+        },
+        {
+          "id": "entitlements-executive",
+          "title": "Travel Entitlements - Executive",
+          "minRole": "Executive",
+          "content": "Executive: Domestic flights Business class permitted on flights over 3 hours. International flights Business class. Hotel budget up to EUR 380/night, no city restriction. Per diem EUR 110/day domestic, EUR 140/day international. Ground transport no restriction within reason. Annual travel budget cap: EUR 40,000."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Any travel request exceeding a category's standard entitlement (e.g. an Associate requesting Business class, or a Senior employee exceeding the annual cap) requires a written exception approval from a Vice President or above prior to booking. Exceptions must state business justification and are logged in the Travel Exceptions Register for quarterly audit. Associate traveling on a flight duration exceeding 8 hours may request Economy Plus with VP approval. Medical or accessibility accommodation requests are approved regardless of category, requiring HR sign-off instead of VP. Client-mandated travel class requirements require VP approval, noting client name in justification."
+        },
+        {
+          "id": "booking-reimbursement",
+          "title": "Booking & Reimbursement",
+          "minRole": "Associate",
+          "content": "All travel must be booked through the approved corporate travel portal; personal booking with later reimbursement is discouraged and capped at Associate-tier rates regardless of employee category. Reimbursement claims must be submitted within 14 days of trip completion. Receipts required for any single expense over EUR 20."
+        },
+        {
+          "id": "non-compliance",
+          "title": "Non-Compliance",
+          "minRole": "Associate",
+          "content": "Repeated bookings outside policy without an approved exception may result in the excess cost being charged back to the employee's department budget and a formal note in the quarterly expense review."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Pam Beesly, People Ops Europe, pam.beesly@dundermifflin-corp.com, +44 20 7946 0148. Exception approvals: Andy Bernard, VP Europe, andy.bernard@dundermifflin-corp.com, +44 20 7946 0172. Booking & process issues: Meredith Palmer, Accounting Europe, meredith.palmer@dundermifflin-corp.com, +44 20 7946 0193. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    },
+    {
+      "id": "europe-parental-leave",
+      "zone": "Europe",
+      "topic": "Parental Leave",
+      "effectiveRegions": ["United Kingdom", "Germany", "France", "Netherlands"],
+      "currency": "EUR",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose",
+          "minRole": "Associate",
+          "content": "This policy governs parental (maternity, paternity, and adoption) leave entitlements for DunderMifflin Enterprises employees in the Europe region. Entitlements are set per country to comply with local statutory minimums, with company enhancements applied on top where noted. This document covers the United Kingdom, Germany, France, and the Netherlands; entitlements do not transfer between countries if an employee relocates mid-leave."
+        },
+        {
+          "id": "entitlements-uk",
+          "title": "Country Entitlement - United Kingdom",
+          "minRole": "Associate",
+          "content": "United Kingdom: 52 weeks statutory maternity leave; first 6 weeks at 90% pay, next 33 weeks at statutory rate. Company enhancement: pay raised to 100% of base salary for the first 12 weeks. Paternity leave: 2 weeks, statutory pay."
+        },
+        {
+          "id": "entitlements-germany",
+          "title": "Country Entitlement - Germany",
+          "minRole": "Associate",
+          "content": "Germany: 14 weeks Mutterschutz (maternity protection) at full pay, plus Elternzeit available up to 3 years (partial pay via Elterngeld). Company tops up the first 8 weeks to 100% of base salary."
+        },
+        {
+          "id": "entitlements-france",
+          "title": "Country Entitlement - France",
+          "minRole": "Associate",
+          "content": "France: 16 weeks maternity leave paid via social security. Company tops up to 100% of base salary for the first 10 weeks. Paternity leave: 28 days, statutory."
+        },
+        {
+          "id": "entitlements-netherlands",
+          "title": "Country Entitlement - Netherlands",
+          "minRole": "Associate",
+          "content": "Netherlands: 16 weeks maternity leave, fully paid. Partner leave: 6 weeks, first week full pay, remaining weeks at 70% pay."
+        },
+        {
+          "id": "category-provisions-standard",
+          "title": "Category Provisions - Associate & Senior",
+          "minRole": "Associate",
+          "content": "Associates and Senior employees: standard entitlement as listed per country, full job protection on return."
+        },
+        {
+          "id": "category-provisions-executive",
+          "title": "Category Provisions - Executive",
+          "minRole": "Executive",
+          "content": "Executives: same duration as standard entitlement, with an optional staggered return-to-work arrangement (reduced schedule for first 4 weeks) available on request."
+        },
+        {
+          "id": "exception-process",
+          "title": "Exception Process",
+          "minRole": "Senior",
+          "content": "Extensions beyond standard entitlement (e.g. for medical complications, multiple births, or adoption-specific circumstances) require written approval from a Vice President and People Operations. Medical complication extensions are approved by HR upon medical documentation, no VP approval needed. Discretionary extension requests beyond medical need require VP + People Ops joint approval, logged in the Leave Exceptions Register."
+        },
+        {
+          "id": "pay-continuation",
+          "title": "Pay Continuation",
+          "minRole": "Associate",
+          "content": "Company top-up pay (where noted per country) is calculated on base salary only, excluding bonus and commission. Benefits (health coverage, retirement contributions) continue uninterrupted throughout the leave period."
+        },
+        {
+          "id": "contacts",
+          "title": "Questions & Contacts",
+          "minRole": "Associate",
+          "content": "General policy questions: Pam Beesly, People Ops Europe, pam.beesly@dundermifflin-corp.com, +44 20 7946 0148. Exception approvals: Andy Bernard, VP Europe, andy.bernard@dundermifflin-corp.com, +44 20 7946 0172. Booking & process issues: Meredith Palmer, Accounting Europe, meredith.palmer@dundermifflin-corp.com, +44 20 7946 0193. Escalations: Robert California, CFO, robert.california@dundermifflin-corp.com, +1 (570) 555-0101."
+        }
+      ]
+    }
+  ]
+}

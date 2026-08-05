@@ -1,0 +1,76 @@
+# DunderMifflin MCP Server
+
+A Model Context Protocol (MCP) server that exposes permission-aware HR policy lookups as callable AI tools. Built as a hands-on exploration of the MCP protocol and enterprise-style access control, not a demo, a working system with a scored benchmark behind it.
+
+## The problem
+
+Enterprise policy data (hiring, travel, parental leave) often has role-specific sections, an Associate's compensation band and a CFO's compensation band living in the same document. A naive connector that serves the whole document to everyone leaks sensitive information. This project enforces access at the point of retrieval, not after the fact.
+
+## What it does
+
+Three tools, backed by 9 synthetic policy documents across 3 zones (Americas, APAC, Europe) and 3 topics (Hiring & Compensation, Travel, Parental Leave):
+
+| Tool | Purpose |
+|---|---|
+| `list_policies` | Lists all available policies with zone, topic, and effective regions |
+| `get_policy` | Retrieves a policy by ID, returning only the sections the caller's role is permitted to see |
+| `check_access` | Checks whether a role can view a specific section, without returning its content |
+
+Each policy section carries a `minRole` (`Associate`, `Senior`, or `Executive`). `get_policy` filters sections against the caller's role at retrieval time, an Associate calling `get_policy` on a hiring policy never receives the Executive compensation band in the response, it isn't fetched and then hidden, it's never returned at all.
+
+## Architecture
+
+- **Data**: `data/policies.json`, synthetic policy content, restructured from document-level to section-level role tagging (see Limitations for why)
+- **Server**: `server.js`, built on the official `@modelcontextprotocol/sdk`, using the stdio transport for local use
+- **Evaluation**: `eval/test-cases.json` + `eval.js`, a 39-case automated benchmark
+
+## Running it
+
+```bash
+git clone <repo-url>
+cd dundermifflin-mcp
+npm install
+node server.js
+```
+
+To test interactively with the MCP Inspector:
+
+```bash
+npx @modelcontextprotocol/inspector node server.js
+```
+
+To run the full evaluation suite:
+
+```bash
+node eval.js
+```
+
+## Benchmark results
+
+39/39 test cases passing, split across three buckets:
+
+| Bucket | Cases | Passing | What it covers |
+|---|---|---|---|
+| Functional | 23 | 23 | Correct section counts and access decisions across all 9 policies, all 3 roles |
+| Safety | 10 | 10 | Invalid roles, missing policies/sections, malformed input, missing required fields |
+| Failure/fallback | 6 | 6 | Unknown tool calls, wrong data types, whitespace and empty-string edge cases |
+
+## A bug the benchmark caught (in the eval, not the server)
+
+The first run scored 31/39. All 8 failures were cases expecting the server to reject bad input. Debugging showed the server was correctly rejecting every one of them, the eval script was wrong, not the server: it assumed a rejected tool call would break the connection (throw an exception), but MCP returns validation failures as a normal, successful response with an `isError: true` flag inside it. The fix was checking that flag directly instead of assuming a dropped connection. Left here because it's a more honest signal-of-understanding than a clean-looking commit history.
+
+## Known limitations
+
+- **Local only.** Runs on stdio transport, one machine, one caller. No public deployment or authentication yet (planned next).
+- **Exact-match lookups.** `policyId` and `sectionId` must match exactly, no fuzzy matching, no natural-language topic search, and no whitespace trimming (` americas-hiring ` with padding spaces will not match `americas-hiring`, this was caught and deliberately documented rather than fixed, see `X04` in the eval suite).
+- **Case-sensitive IDs.** `AMERICAS-HIRING` will not match `americas-hiring`.
+- **Manually role-tagged data.** Section-level `minRole` tags were assigned by hand based on the original document content, not derived automatically from any policy metadata standard.
+- **Synthetic data only.** All 9 policies are fictional, generated for a fictional company (DunderMifflin Enterprises), no real organizational or personal data is used anywhere in this repo.
+
+## Relationship to my other connector project
+
+This project intentionally reuses the same underlying policy dataset as [enterprise-policy-connector](https://github.com/Ashutosh-nagaria/enterprise-policy-connector), a RAG-based semantic search system over the same documents. Same data, two different retrieval patterns: RAG for open-ended natural language questions, MCP tools for structured, permission-checked lookups. Worth comparing directly if evaluating both.
+
+## License
+
+MIT
