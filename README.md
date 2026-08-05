@@ -27,7 +27,7 @@ Each policy section carries a `minRole` (`Associate`, `Senior`, or `Executive`).
 ## Running it
 
 ```bash
-git clone <repo-url>
+git clone git clone https://github.com/Ashutosh-nagaria/enterprise-policy-mcp.git
 cd dundermifflin-mcp
 npm install
 node server.js
