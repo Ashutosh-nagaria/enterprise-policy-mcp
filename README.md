@@ -7,7 +7,12 @@ A Model Context Protocol (MCP) server that exposes permission-aware HR policy lo
 Enterprise policy data (hiring, travel, parental leave) often has role-specific sections, an Associate's compensation band and a CFO's compensation band living in the same document. A naive connector that serves the whole document to everyone leaks sensitive information. This project enforces access at the point of retrieval, not after the fact.
 
 ## What it does
+## Live deployment
 
+This server is deployed and publicly reachable at: https://enterprise-policy-mcp.onrender.com/mcp
+Requires an API key, sent as an `x-api-key` header on every request. Reach out if you'd like a demo key to try it yourself.
+
+**Note:** hosted on Render's free tier, which spins down after periods of inactivity. The first request after idle time may take 20-30 seconds to respond while it wakes back up.
 Three tools, backed by 9 synthetic policy documents across 3 zones (Americas, APAC, Europe) and 3 topics (Hiring & Compensation, Travel, Parental Leave):
 
 | Tool | Purpose |
