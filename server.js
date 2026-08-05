@@ -1,5 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
+import express from "express";
 import { z } from "zod";
 
 import { readFile } from "fs/promises";
@@ -127,5 +128,32 @@ server.tool(
     return { content: [{ type: "text", text: JSON.stringify(result, null, 2) }] };
   }
 );
-const transport = new StdioServerTransport();
+const app = express();
+app.use(express.json());
+
+const transport = new StreamableHTTPServerTransport({
+  sessionIdGenerator: undefined
+});
 await server.connect(transport);
+
+const VALID_API_KEY = process.env.MCP_API_KEY;
+
+app.post("/mcp", async (req, res) => {
+  const providedKey = req.headers["x-api-key"];
+
+  if (!VALID_API_KEY || providedKey !== VALID_API_KEY) {
+    return res.status(401).json({ error: "Unauthorized: missing or invalid API key" });
+  }
+
+  try {
+    await transport.handleRequest(req, res, req.body);
+  } catch (err) {
+    console.error("Error handling MCP request:", err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`DunderMifflin MCP server listening on port ${PORT}`);
+});
