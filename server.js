@@ -131,13 +131,6 @@ server.tool(
 const app = express();
 app.use(express.json());
 
-const transport = new StreamableHTTPServerTransport({
-  sessionIdGenerator: undefined
-});
-await server.connect(transport);
-
-const VALID_API_KEY = process.env.MCP_API_KEY;
-
 app.post("/mcp", async (req, res) => {
   const providedKey = req.headers["x-api-key"];
 
@@ -146,6 +139,13 @@ app.post("/mcp", async (req, res) => {
   }
 
   try {
+    const transport = new StreamableHTTPServerTransport({
+      sessionIdGenerator: undefined
+    });
+    res.on("close", () => {
+      transport.close();
+    });
+    await server.connect(transport);
     await transport.handleRequest(req, res, req.body);
   } catch (err) {
     console.error("Error handling MCP request:", err);
