@@ -76,6 +76,12 @@ The first run scored 31/39. All 8 failures were cases expecting the server to re
 
 This project intentionally reuses the same underlying policy dataset as [enterprise-policy-connector](https://github.com/Ashutosh-nagaria/enterprise-policy-connector), a RAG-based semantic search system over the same documents. Same data, two different retrieval patterns: RAG for open-ended natural language questions, MCP tools for structured, permission-checked lookups. Worth comparing directly if evaluating both.
 
+
+## Learn more
+
+See [CONCEPTS.md](./CONCEPTS.md) for a full ELI5-to-PM-level explanation of every concept behind this project.
+
+
 ## License
 
 MIT
