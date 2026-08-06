@@ -81,6 +81,13 @@ This project intentionally reuses the same underlying policy dataset as [enterpr
 
 See [CONCEPTS.md](./CONCEPTS.md) for a full ELI5-to-PM-level explanation of every concept behind this project.
 
+## Live demo: permission filtering in action
+
+Connected to Claude Code and asked a policy question. Claude correctly identifies that it queried at the Associate access level, notes that sections are hidden, and offers to re-query at a higher role, demonstrating the permission-aware retrieval working in a real conversation, not just in test cases.
+
+![Claude Code correctly identifying hidden sections at the Associate role](./docs/demo-claude-code-1.png)
+
+![Full session: connecting to the live server and querying it](./docs/demo-claude-code-2.png)
 
 ## License
 
