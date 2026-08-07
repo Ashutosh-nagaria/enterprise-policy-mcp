@@ -1,0 +1,30 @@
+name: Run eval suite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    env:
+      MCP_API_KEY: ${{ secrets.MCP_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install
+
+      - name: Start server in background
+        run: node server.js &
+
+      - name: Give the server a moment to boot
+        run: sleep 3
+
+      - name: Run eval suite
+        run: npm test
