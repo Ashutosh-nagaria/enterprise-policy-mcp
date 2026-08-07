@@ -182,17 +182,17 @@ Each concept is explained twice: first in plain, everyday language (ELI5), then 
 
 ## 17. Putting It All Together: The System in One Paragraph
 
-A person's AI client (Claude, Gemini) connects over HTTPS to a live server, presenting an API key in a request header. The server checks that key before doing anything else. If valid, it builds a fresh internal server instance, registers four tools (each with a name, description, and strict input schema), and hands the request to the matching tool. Two of those tools filter a JSON dataset of enterprise policies by comparing the caller's role against a `minRole` tag on each individual section, only returning what that role is permitted to see. Every piece of this, the tool logic, the permission filtering, the auth check, is covered by an automated 39-case test suite that can be re-run at any time to catch regressions. All of it is deployed, versioned in Git, and publicly documented.
+A person's AI client (Claude, Gemini) connects over HTTPS to a live server, presenting an API key in a request header. The server checks that key before doing anything else. If valid, it builds a fresh internal server instance, registers three tools (each with a name, description, and strict input schema), and hands the request to the matching tool. Two of those tools filter a JSON dataset of enterprise policies by comparing the caller's role against a `minRole` tag on each individual section, only returning what that role is permitted to see. Every piece of this, the tool logic, the permission filtering, the auth check, is covered by an automated 39-case test suite that runs as a real HTTP client against a running server and can be re-run at any time to catch regressions. All of it is deployed, versioned in Git, and publicly documented.
 
 ---
 
-## Talking Points for Interviews
+## What this project actually demonstrates
 
-- **Connector architecture:** "I built a permission-aware MCP connector that filters at the point of retrieval, not after the fact, the same principle behind enterprise ACL-scoped systems."
-- **Tool design as product design:** "The tool description is the real interface between my system and the AI's judgment, I treated it like a spec, not an implementation detail."
-- **Evaluation discipline:** "I built a 39-case automated benchmark before calling anything 'done,' split across functional, safety, and failure-handling categories."
-- **Real debugging, twice:** "I found and fixed the same class of permission-tagging bug in two separate projects, and later diagnosed a genuine production bug (shared state across HTTP requests) by reading logs, forming a hypothesis, and testing it methodically."
-- **Security practices:** "Secrets never touch the codebase, they're injected via environment variables, checked on every request before any tool logic runs."
+- **Connector architecture.** Filtering happens at the point of retrieval, not after the fact, the same principle behind enterprise ACL-scoped systems.
+- **Tool design as product design.** The tool description is the real interface between the system and the AI's judgment, closer to a spec than an implementation detail.
+- **Evaluation discipline.** A 39-case automated benchmark, split across functional, safety, and failure-handling categories, that connects over the same transport the server actually runs, not a shortcut that only worked by accident.
+- **Real debugging, more than once.** The same class of permission-tagging bug showed up in two separate projects. A genuine production bug (shared state across HTTP requests) got diagnosed by reading logs, forming a hypothesis, and testing it. A silently-hanging eval script, after the stdio-to-HTTP migration, got caught and rewritten rather than left broken with a stale passing claim in the README.
+- **Security practices.** Secrets never touch the codebase, they're injected via environment variables, checked on every request before any tool logic runs.
 
 ---
 

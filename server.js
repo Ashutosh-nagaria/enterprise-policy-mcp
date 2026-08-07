@@ -17,19 +17,6 @@ function createMcpServer() {
   });
 
   server.tool(
-    "get_greeting",
-    "Returns a friendly greeting for a given name",
-    { name: z.string().describe("The name of the person to greet") },
-    async ({ name }) => {
-      return {
-        content: [
-          { type: "text", text: `Hello, ${name}! Welcome to the DunderMifflin MCP server.` }
-        ]
-      };
-    }
-  );
-
-  server.tool(
     "list_policies",
     "Lists all available DunderMifflin policies, showing their zone, topic, and effective regions",
     {},

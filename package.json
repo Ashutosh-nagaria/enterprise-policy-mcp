@@ -1,12 +1,13 @@
 {
   "name": "dundermifflin-mcp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A permission-aware MCP server exposing HR policy lookups as callable AI tools, filtered by caller role at retrieval time.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "node eval.js"
   },
-  "keywords": [],
+  "keywords": ["mcp", "model-context-protocol", "access-control"],
   "type": "module",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",

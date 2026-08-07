@@ -1,14 +1,21 @@
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
-import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
 import { readFile } from "fs/promises";
 
 const testFile = JSON.parse(
   await readFile(new URL("./eval/test-cases.json", import.meta.url))
 );
 
-const transport = new StdioClientTransport({
-  command: "node",
-  args: ["server.js"]
+const SERVER_URL = process.env.MCP_SERVER_URL || "http://localhost:3000/mcp";
+const API_KEY = process.env.MCP_API_KEY;
+
+if (!API_KEY) {
+  console.error("Set MCP_API_KEY to the same value the server is running with, then re-run this.");
+  process.exit(1);
+}
+
+const transport = new StreamableHTTPClientTransport(new URL(SERVER_URL), {
+  requestInit: { headers: { "x-api-key": API_KEY } }
 });
 
 const client = new Client({ name: "eval-client", version: "1.0.0" });
@@ -89,3 +96,4 @@ if (failures.length > 0) {
 }
 
 await client.close();
+process.exit(failed > 0 ? 1 : 0);
